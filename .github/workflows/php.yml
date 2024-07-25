@@ -20,7 +20,7 @@ jobs:
 
     - name: Install Composer Dependencies
       run: |
-        composer install --no-ansi --prefer-dist --no-interaction --no-progress
+        composer update --no-ansi --prefer-dist --no-interaction --no-progress
 
     - name: Build PHP application
       run: |
