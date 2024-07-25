@@ -7,7 +7,7 @@ use Core\View;
 // App::html($title ?? 'Leviplatte Admin');
 App::render(
      View::component('app/html', ['title' => $title ?? 'Leviplatte Admin']),
-     View::component('app/topbar'),
+     // View::component('app/topbar'),
      App::body( 
           dirname(__FILE__) .'/'. $__page . '.php',
           $page ?? 'list'

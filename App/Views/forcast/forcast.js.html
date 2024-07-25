@@ -1,0 +1,139 @@
+<script>
+    $(function() {
+      // Outbound Calls & Contact Rate per weekday
+      var options = {
+        series: [{
+          name: 'Outbound Calls',
+          type: 'column',
+          data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+        }, {
+          name: 'Contact Rate',
+          type: 'line',
+          data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+        }],
+        colors: ['var(--chart-color1)', 'var(--chart-color5)'],
+        chart: {
+          height: 320,
+          type: 'line',
+          toolbar: {
+            show: false,
+          },
+        },
+        stroke: {
+          width: [0, 4]
+        },
+        dataLabels: {
+          enabled: true,
+          enabledOnSeries: [1]
+        },
+        labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+        xaxis: {
+          type: 'datetime'
+        },
+        yaxis: [{
+          title: {
+            text: 'Outbound Calls',
+          },
+        }, {
+          opposite: true,
+          title: {
+            text: 'Contact Rate'
+          }
+        }]
+      };
+      var chart = new ApexCharts(document.querySelector("#apex-OutboundCalls"), options);
+      chart.render();
+      // Sales Statistics
+      var options = {
+        series: [{
+          name: 'Revenue',
+          data: [13, 23, 20, 8, 13, 27, 33, 12, 67, 22, 43, 21, 49, 13, 23]
+        }, {
+          name: 'Cost',
+          data: [44, 55, 41, 67, 22, 43, 21, 49, 13, 23, 20, 8, 13, 27, 33]
+        }],
+        chart: {
+          type: 'bar',
+          height: 240,
+          stacked: true,
+          //stackType: '100%',
+          toolbar: {
+            show: false,
+          },
+        },
+        colors: ['var(--chart-color1)', 'var(--chart-color5)'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            legend: {
+              position: 'bottom',
+              offsetX: -10,
+              offsetY: 0
+            }
+          }
+        }],
+        xaxis: {
+          categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', ],
+        },
+        fill: {
+          opacity: 1
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        legend: {
+          position: 'bottom',
+        },
+        tooltip: {
+          y: [{
+            title: {
+              formatter: function(val) {
+                return val + " (K)"
+              }
+            }
+          }, {
+            title: {
+              formatter: function(val) {
+                return val + " (K)"
+              }
+            }
+          }]
+        },
+      };
+      var chart = new ApexCharts(document.querySelector("#apex-SalesStatistics"), options);
+      chart.render();
+      // Top Selling Plans
+      var options = {
+        series: [32, 56, 12],
+        chart: {
+          type: 'donut',
+          width: 340,
+          toolbar: {
+            show: false,
+          },
+        },
+        responsive: [{
+          breakpoint: 1200,
+          options: {
+            chart: {
+              width: 260
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }],
+        labels: ['Plan 1', 'Plan 2', 'Plan 3'],
+        colors: ['var(--chart-color1)', 'var(--chart-color2)', 'var(--chart-color3)'],
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          position: 'bottom', // top, bottom
+          enabled: false
+        }
+      };
+      var chart = new ApexCharts(document.querySelector("#apex-TopSellingPlans"), options);
+      chart.render();
+    })
+  </script>

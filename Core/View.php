@@ -2,6 +2,9 @@
 
 namespace Core;
 
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
+
 /**
  * View Base Controller
  * 
@@ -73,8 +76,6 @@ class View
         }
     }
 
-
-
     /**
      * Autoload component files 
      * @param string $path the component folder
@@ -117,8 +118,8 @@ class View
     {
         static $twig = null;
         if ($twig === null) {
-            $loader = new \Twig_Loader_Filesystem('App/Views');
-            $twig = new \Twig_Environment($loader);
+            $loader = new FilesystemLoader('App/Views/twig');
+            $twig = new Environment($loader);
             $twig->addGlobal('user', \App\Auth::getUser());
             $twig->addGlobal('message', \App\Flash::getMessage());
             $twig->addGlobal('URL', \App\Config::BASE_URL);
@@ -131,7 +132,7 @@ class View
             $twig->addGlobal('fgCode', translate('Forgot Code'));
             $twig->addGlobal('signbtn', translate('Sign in'));
         }
-        echo $twig->render($view, $args);
+        echo @$twig->render($view, $args);
     }
 
     /**
@@ -141,8 +142,8 @@ class View
     {
         static $twig = null;
         if ($twig === null) {
-            $loader = new \Twig_Loader_Filesystem('App/Views');
-            $twig = new \Twig_Environment($loader);
+            $loader = new FilesystemLoader('App/Views');
+            $twig = new Environment($loader);
         }
         return $twig->render($view, $args);
     }

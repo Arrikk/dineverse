@@ -3,26 +3,20 @@ namespace App\Controllers;
 
 use Core\Controller;
 use Core\Http\Res;
+use Core\View;
 
 class Home extends Controller
 {
     public function index()
     {
-        Res::send('
-        <pre> 
-        ---
-        title: CODEHART
-        slug: Web/API/BRUIZ
-        page-type: web-api-overview
-        tags:
-          - API
-          - WEB
-          - Models
-          - Controlers
-          - Views
-          - Routes
-        ---
-        </pre>
-        ');
+      View::render("login.html");
+    }
+    public function dashboard()
+    {
+      View::draw('dashboard/index');
+    }
+    public function chat()
+    {
+      View::draw('ai/chat');
     }
 }
