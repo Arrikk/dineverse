@@ -1,20 +1,4 @@
 <?php
-
-use App\Controllers\Company\Companies;
-use App\Controllers\Features\Features;
-use App\Controllers\FileManager\Files\Files;
-use App\Controllers\FileManager\Folders\Folders;
-use App\Controllers\Finance\Wallets\Wallets;
-use App\Controllers\Earn\Earn;
-use App\Controllers\Home;
-use App\Controllers\Members\Members;
-use App\Controllers\Plans\Plans;
-use App\Controllers\Podcast\Categories;
-use App\Controllers\Podcast\Podcasts;
-use App\Controllers\Stripe\Checkout\CallbackUrl;
-use App\Controllers\Stripe\Portal;
-use App\Controllers\Stripe\Webhook\Webhook;
-use App\Controllers\Subscriptions\Subscriptions;
 use Core\Router\Router as Route;
 
 Route::get('', 'home@index');

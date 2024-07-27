@@ -24,7 +24,7 @@ use Core\View;
   <script src="/Public/assets/js/plugins.js"></script>
 </head>
 
-<body class="layout-1" data-luno="theme-blue">
+<body class="layout-1" data-luno="theme-red">
   <!-- start: sidebar -->
   <div class="sidebar p-2 py-md-3 @@cardClass">
     <div class="container-fluid">
