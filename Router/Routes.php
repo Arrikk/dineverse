@@ -12,6 +12,7 @@ Route::get('inventory/invoice', 'inventory@invoice@pages');
 Route::get('forcast/sales', 'forcast@sales@pages');
 Route::get('forcast/calender', 'forcast@calender@pages');
 Route::get('chat', 'home@chat');
+Route::post('ai', 'home@ai');
 
 // Auth Route
 Route::post('register', 'users@register@auth');

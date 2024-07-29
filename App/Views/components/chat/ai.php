@@ -7,7 +7,7 @@
         </div>
         <ul class="nav nav-tabs tab-page-toolbar rounded text-center mb-1" role="tablist">
           <!-- <li class="flex-fill nav-item"><a class="nav-link border-0 active" data-bs-toggle="tab" href="app-chat.html#chat-recent" role="tab" aria-selected="false">Chat</a></li> -->
-          <li class="flex-fill nav-item"><a class="nav-link border-0 active" data-bs-toggle="tab" href="app-chat.html#chat-groups" role="tab" aria-selected="true">Suggestions</a></li> 
+          <li class="flex-fill nav-item"><a class="nav-link border-0 active" data-bs-toggle="tab" href="app-chat.html#chat-groups" role="tab" aria-selected="true">Suggestions</a></li>
           <!-- <li class="flex-fill nav-item"><a class="nav-link border-0 " data-bs-toggle="tab" href="app-chat.html#chat-contact" role="tab" aria-selected="false">Contact</a></li> -->
         </ul>
       </div>
@@ -69,7 +69,7 @@
                 </div>
               </div>
             </div>
-            <ul class="py-xl-3 py-2 px-xxl-5 px-lg-4 px-3 list-unstyled mb-0">
+            <ul id="chatContainer" class="py-xl-3 py-2 px-xxl-5 px-lg-4 px-3 list-unstyled mb-0">
               <!-- Chat: left -->
               <li class="mb-3 d-flex flex-row align-items-end">
                 <div class="max-width-70">
@@ -80,15 +80,6 @@
                   <div class="card p-3">
                     <div class="message"> Hi Aiden, how are you?</div>
                   </div>
-                </div>
-                <!-- More option -->
-                <div class="dropdown morphing">
-                  <a href="app-chat.html#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                  <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="app-chat.html#">Edit</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Share</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Delete</a></li>
-                  </ul>
                 </div>
               </li>
               <!-- Chat: right -->
@@ -101,126 +92,6 @@
                     <div class="message">Are we meeting today?</div>
                   </div>
                 </div>
-                <!-- More option -->
-                <div class="dropdown morphing">
-                  <a href="app-chat.html#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                  <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="app-chat.html#">Edit</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Share</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Delete</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Chat: left -->
-              <li class="mb-3 d-flex flex-row align-items-end">
-                <div class="max-width-70">
-                  <div class="user-info mb-1">
-                    <img class="avatar xs rounded-circle me-1" src="/Public/assets/img/xs/avatar1.jpg" alt="avatar">
-                    <span class="text-muted small">10:10 AM, Today</span>
-                  </div>
-                  <div class="card p-3">
-                    <div class="message"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-                  </div>
-                </div>
-                <!-- More option -->
-                <div class="dropdown morphing">
-                  <a href="app-chat.html#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                  <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="app-chat.html#">Edit</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Share</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Delete</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Chat: left -->
-              <li class="mb-3 d-flex flex-row align-items-end">
-                <div class="max-width-70">
-                  <div class="user-info mb-1">
-                    <img class="avatar xs rounded-circle me-1" src="/Public/assets/img/xs/avatar1.jpg" alt="avatar">
-                    <span class="text-muted small">10:10 AM, Today</span>
-                  </div>
-                  <div class="card p-3">
-                    <div class="message"> Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
-                  </div>
-                </div>
-                <!-- More option -->
-                <div class="dropdown morphing">
-                  <a href="app-chat.html#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                  <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="app-chat.html#">Edit</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Share</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Delete</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Chat: right -->
-              <li class="mb-3 d-flex flex-row-reverse align-items-end">
-                <div class="max-width-70 text-end">
-                  <div class="user-info mb-1">
-                    <span class="text-muted small">10:12 AM, Today</span>
-                  </div>
-                  <div class="card border-0 p-3 bg-primary text-light">
-                    <div class="message">
-                      <p>Yes, Orlando Allredy done <br> There are many variations of passages of Lorem Ipsum available</p>
-                      <img class="w120 img-thumbnail" src="/Public/assets/img/gallery/10.jpg" alt="" />
-                      <img class="w120 img-thumbnail" src="/Public/assets/img/gallery/12.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <!-- More option -->
-                <div class="dropdown morphing">
-                  <a href="app-chat.html#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                  <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="app-chat.html#">Edit</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Share</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Delete</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Chat: left -->
-              <li class="mb-3 d-flex flex-row align-items-end">
-                <div class="max-width-70">
-                  <div class="user-info mb-1">
-                    <img class="avatar xs rounded-circle me-1" src="/Public/assets/img/xs/avatar1.jpg" alt="avatar">
-                    <span class="text-muted small">10:10 AM, Today</span>
-                  </div>
-                  <div class="card p-3">
-                    <div class="message">
-                      <p>Please find attached images</p>
-                      <img class="w120 img-thumbnail" src="/Public/assets/img/gallery/1.jpg" alt="" />
-                      <img class="w120 img-thumbnail" src="/Public/assets/img/gallery/2.jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <!-- More option -->
-                <div class="dropdown morphing">
-                  <a href="app-chat.html#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                  <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="app-chat.html#">Edit</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Share</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Delete</a></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- Chat: right -->
-              <li class="mb-3 d-flex flex-row-reverse align-items-end">
-                <div class="max-width-70 text-end">
-                  <div class="user-info mb-1">
-                    <span class="text-muted small">10:12 AM, Today</span>
-                  </div>
-                  <div class="card border-0 p-3 bg-primary text-light">
-                    <div class="message">Okay, will check and let you know.</div>
-                  </div>
-                </div>
-                <!-- More option -->
-                <div class="dropdown morphing">
-                  <a href="app-chat.html#" class="nav-link py-2 px-3 text-muted" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                  <ul class="dropdown-menu border-0 shadow">
-                    <li><a class="dropdown-item" href="app-chat.html#">Edit</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Share</a></li>
-                    <li><a class="dropdown-item" href="app-chat.html#">Delete</a></li>
-                  </ul>
-                </div>
               </li>
             </ul>
           </div>
@@ -230,16 +101,68 @@
               <input type="file" class="form-control" name="file-input" id="file-input">
               <label for="file-input" class="fa fa-paperclip"></label>
             </div>
-            <input type="text" class="form-control bg-transparent border-0" placeholder="Enter text here...">
-            <button class="btn bg-secondary text-light text-uppercase" type="button">Send</button>
+            <input type="text" id="inputField" class="form-control bg-transparent border-0" placeholder="Enter text here...">
+            <button id="generateButton" class="btn bg-secondary text-light text-uppercase" type="button">Send</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
   $('.chat-app .chatlist-toggle').on('click', function() {
     $('.chat-app .order-1').toggleClass('open');
+  });
+
+  let generateButton = document.getElementById('generateButton');
+  let inputField = document.getElementById('inputField');
+  let outputField = document.getElementById('chatContainer');
+
+  const chatLeft = (text) => outputField.innerHTML += `<li class="mb-3 d-flex flex-row align-items-end">
+                <div class="max-width-70">
+                  <div class="user-info mb-1">
+                    <img class="avatar xs rounded-circle me-1" src="/Public/assets/img/xs/avatar1.jpg" alt="avatar">
+                    <span class="text-muted small">10:10 AM, Today</span>
+                  </div>
+                  <div class="card p-3">
+                    <div class="message"> ${text}</div>
+                  </div>
+                </div>
+              </li>`
+  const chatRight = (text) => outputField.innerHTML += ` <li class="mb-3 d-flex flex-row-reverse align-items-end">
+                <div class="max-width-70 text-end">
+                  <div class="user-info mb-1">
+                    <span class="text-muted small">10:12 AM, Today</span>
+                  </div>
+                  <div class="card border-0 p-3 bg-primary text-light">
+                    <div class="message">${text}</div>
+                  </div>
+                </div>
+              </li>`
+
+  generateButton.addEventListener('click', async () => {
+    const prompt = inputField.value;
+    inputField.value = ""
+    try {
+      generateButton.disabled = true
+      generateButton.textContent = "Typing..."
+      chatRight(prompt)
+      const response = await axios.post('/ai', {prompt}, {headers: {
+        'Content-Type': 'application/json'
+      }});
+      const data = await response.data
+      generateButton.disabled = false
+      generateButton.textContent = "Send"
+      chatLeft(data)
+      console.log(data)
+      // outputField.textContent = data.text;
+    } catch (error) {
+      
+      generateButton.textContent = "Send"
+      generateButton.disabled = false
+      console.log(error);
+      // Handle error, e.g., display an error message
+    }
   });
 </script>
