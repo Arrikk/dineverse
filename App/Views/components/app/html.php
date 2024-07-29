@@ -13,8 +13,8 @@ use Core\View;
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Responsive Bootstrap 5 admin dashboard template & web App ui kit.">
-  <meta name="keyword" content="LUNO, Bootstrap 5, ReactJs, Angular, Laravel, VueJs, ASP .Net, Admin Dashboard, Admin Theme, HRMS, Projects, Hospital Admin, CRM Admin, Events, Fitness, Music, Inventory, Job Portal">
-  <link rel="icon" href="/Public/assets/img/favicon.ico" type="image/x-icon"> <!-- Favicon-->
+  <meta name="keyword" content="DineVerse">
+  <link rel="icon" href="/Public/assets/logo/dv-profil-4.png" type="image/x-icon"> <!-- Favicon-->
   <title>Dashboard</title>
   <!-- Application vendor css url -->
   <link rel="stylesheet" href="/Public/assets/cssbundle/daterangepicker.min.css">

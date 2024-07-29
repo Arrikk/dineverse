@@ -28,7 +28,7 @@
                     <td> #RA0011 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar1.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar1.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Andew Jon</div>
                       </div>
                     </td>
@@ -51,7 +51,7 @@
                     <td> #RA0012 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar2.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar2.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Orlando Lentz</div>
                       </div>
                     </td>
@@ -74,7 +74,7 @@
                     <td> #RA0025 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar3.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar3.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Marshall Nichols</div>
                       </div>
                     </td>
@@ -97,7 +97,7 @@
                     <td> #RA0023 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar4.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar4.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Nellie Maxwell</div>
                       </div>
                     </td>
@@ -120,7 +120,7 @@
                     <td> #RA0026 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar5.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar5.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Marshall Nichols</div>
                       </div>
                     </td>
@@ -143,7 +143,7 @@
                     <td> #RA0065 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar6.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar6.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Issa Bell</div>
                       </div>
                     </td>
@@ -166,7 +166,7 @@
                     <td> #RA0015 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar7.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar7.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Dean Otto</div>
                       </div>
                     </td>
@@ -189,7 +189,7 @@
                     <td> #RA0029 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar8.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar8.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Comeren Diaz</div>
                       </div>
                     </td>
@@ -212,7 +212,7 @@
                     <td> #RA0028 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar9.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar9.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Chris Fox</div>
                       </div>
                     </td>
@@ -235,7 +235,7 @@
                     <td> #RA0035 </td>
                     <td>
                       <div class="d-flex align-items-center">
-                        <img src="../assets/img/xs/avatar10.jpg" class="rounded-circle sm avatar" alt="">
+                        <img src="/Public/assets/img/xs/avatar10.jpg" class="rounded-circle sm avatar" alt="">
                         <div class="ms-2 mb-0">Bucky Barnes</div>
                       </div>
                     </td>
