@@ -30,12 +30,12 @@ use Core\View;
     <div class="container-fluid">
       <!-- sidebar: title-->
       <div class="title-text d-flex align-items-center mb-4 mt-1">
-        <h4 class="sidebar-title mb-0 flex-grow-1"><span class="sm-txt">I</span><span>nventory</span></h4>
+        <h4 class="sidebar-title mb-0 flex-grow-1"><span class="sm-txt">D</span><span>ineverse</span></h4>
       </div>
       <!-- sidebar: menu list -->
       <div class="main-menu flex-grow-1">
         <ul class="menu-list">
-            <li class="divider py-2 lh-sm"><span class="small">MAIN</span><br> <small class="text-muted">Unique dashboard designs </small></li>
+            <!-- <li class="divider py-2 lh-sm"><span class="small">MAIN</span><br> <small class="text-muted">Unique dashboard designs </small></li> -->
             <?php foreach(Menu::myMenu() as $name => $menu): ?>
                 <?php if(!isset($menu['sub'])): ?>
                     <li>

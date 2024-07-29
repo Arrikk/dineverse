@@ -31,7 +31,7 @@
           <div class="header-left flex-grow-1 d-none d-md-block">
             <div class="main-search px-3 flex-fill">
               <input class="form-control" type="text" placeholder="Enter your search key word">
-              <div class="card shadow rounded-4 search-result slidedown">
+              <!-- <div class="card shadow rounded-4 search-result slidedown">
                 <div class="card-body">
                   <small class="text-uppercase text-muted">Recent searches</small>
                   <div class="d-flex flex-wrap align-items-start mt-2 mb-4">
@@ -65,23 +65,12 @@
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- start: link -->
           <ul class="header-right justify-content-end d-flex align-items-center mb-0">
             <!-- start: notifications dropdown-menu -->
-            <li>
-              <div class="dropdown morphing scale-left notifications">
-                <a class="nav-link dropdown-toggle after-none" href="index.html#" role="button" data-bs-toggle="dropdown">
-                  <span class="d-none d-xl-block me-2">Notification</span>
-                  <svg class="d-inline-block d-xl-none" viewBox="0 0 16 16" width="18px" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1.91802L7.203 2.07902C6.29896 2.26322 5.48633 2.75412 4.90265 3.46864C4.31897 4.18316 4.0001 5.07741 4 6.00002C4 6.62802 3.866 8.19702 3.541 9.74202C3.381 10.509 3.165 11.308 2.878 12H13.122C12.835 11.308 12.62 10.51 12.459 9.74202C12.134 8.19702 12 6.62802 12 6.00002C11.9997 5.07758 11.6807 4.18357 11.097 3.46926C10.5134 2.75494 9.70087 2.26419 8.797 2.08002L8 1.91802ZM14.22 12C14.443 12.447 14.701 12.801 15 13H1C1.299 12.801 1.557 12.447 1.78 12C2.68 10.2 3 6.88002 3 6.00002C3 3.58002 4.72 1.56002 7.005 1.09902C6.99104 0.959974 7.00638 0.819547 7.05003 0.686794C7.09368 0.554041 7.16467 0.43191 7.25842 0.328279C7.35217 0.224647 7.4666 0.141815 7.59433 0.085125C7.72206 0.028435 7.86026 -0.000854492 8 -0.000854492C8.13974 -0.000854492 8.27794 0.028435 8.40567 0.085125C8.5334 0.141815 8.64783 0.224647 8.74158 0.328279C8.83533 0.43191 8.90632 0.554041 8.94997 0.686794C8.99362 0.819547 9.00896 0.959974 8.995 1.09902C10.1253 1.32892 11.1414 1.94238 11.8712 2.83552C12.6011 3.72866 12.9999 4.84659 13 6.00002C13 6.88002 13.32 10.2 14.22 12Z" />
-                    <path class="fill-secondary" d="M9.41421 15.4142C9.03914 15.7893 8.53043 16 8 16C7.46957 16 6.96086 15.7893 6.58579 15.4142C6.21071 15.0391 6 14.5304 6 14H10C10 14.5304 9.78929 15.0391 9.41421 15.4142Z" fill="black" />
-                  </svg>
-                </a>
-              </div>
-            </li>
             <!-- start: quick light dark -->
             <li class="d-none d-xl-inline-block">
               <a class="nav-link fullscreen" href="javascript:void(0);" onclick="toggleFullScreen(documentElement)">
@@ -90,28 +79,6 @@
                   <path class="fill-secondary" d="M10.5253 5.97439C10.3927 5.97439 10.2655 5.92173 10.1718 5.82799C10.078 5.73423 10.0254 5.60708 10.0254 5.47449C10.0254 5.34191 10.078 5.21476 10.1718 5.12099L14.2678 1.02499H11.4998C11.3672 1.02499 11.24 0.972315 11.1462 0.878547C11.0525 0.784779 10.9998 0.657602 10.9998 0.524994C10.9998 0.392386 11.0525 0.265209 11.1462 0.17144C11.24 0.0776723 11.3672 0.0249939 11.4998 0.0249939H15.4748C15.6074 0.0249939 15.7346 0.0776723 15.8283 0.17144C15.9221 0.265209 15.9748 0.392386 15.9748 0.524994V4.49999C15.9748 4.6326 15.9221 4.75978 15.8283 4.85355C15.7346 4.94732 15.6074 4.99999 15.4748 4.99999C15.3422 4.99999 15.215 4.94732 15.1212 4.85355C15.0275 4.75978 14.9748 4.6326 14.9748 4.49999V1.73199L10.8788 5.82799C10.785 5.92173 10.6579 5.97439 10.5253 5.97439Z" />
                 </svg>
               </a>
-            </li>
-            <!-- start: Language dropdown-menu -->
-            <li class="d-none d-xl-inline-block">
-              <div class="dropdown morphing scale-left Language">
-                <a class="nav-link dropdown-toggle after-none" href="index.html#" role="button" data-bs-toggle="dropdown">
-                  <svg viewBox="0 0 16 16" width="18px" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path class="fill-secondary" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
-                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />
-                  </svg>
-                </a>
-                <div class="dropdown-menu rounded-4 shadow border-0 p-0" data-bs-popper="none">
-                  <div class="card">
-                    <div class="list-group list-group-custom" style="width: 200px;">
-                      <a href="index.html#" class="list-group-item"><span class="flag-icon flag-icon-gb me-2"></span>UK English</a>
-                      <a href="index.html#" class="list-group-item"><span class="flag-icon flag-icon-us me-2"></span>US English</a>
-                      <a href="index.html#" class="list-group-item"><span class="flag-icon flag-icon-de me-2"></span>Germany</a>
-                      <a href="index.html#" class="list-group-item"><span class="flag-icon flag-icon-in me-2"></span>Hindi</a>
-                      <a href="index.html#" class="list-group-item"><span class="flag-icon flag-icon-sa me-2"></span>Saudi Arabia</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </li>
           </ul>
         </nav>
