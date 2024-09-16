@@ -10,7 +10,10 @@ class Forcast {
     public function calender(){
         View::draw('forcast/calender');
     }
-    // public function schedule(){
-    //     View::draw('hr/employee-schedule');
-    // }
+    public function insight(){
+        View::draw('forcast/insight');
+    }
+    public function inventory(){
+        View::draw('forcast/inventory');
+    }
 }

@@ -4,8 +4,8 @@
  */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css);@import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css);@import url(https://wrraptheme.com/demo/assets/luno-licence.min.css);@import url(https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css);@font-face {
     font-family: FontAwesome;
-    src: url(../fonts/fontawesome-webfont.eot%3Fv=4.7.0);
-    src: url(../fonts/fontawesome-webfont.eot%3F) format("embedded-opentype"),url(../fonts/fontawesome-webfont.woff2%3Fv=4.7.0) format("woff2"),url(../fonts/fontawesome-webfont.woff%3Fv=4.7.0) format("woff"),url(../fonts/fontawesome-webfont.ttf%3Fv=4.7.0) format("truetype"),url(../fonts/fontawesome-webfont.svg%3Fv=4.7.0) format("svg");
+    src: url(/Public/assets/fonts/fontawesome-webfont.eot?v=4.7.0);
+    src: url(/Public/assets/fonts/fontawesome-webfont.eot) format("embedded-opentype"),url(/Public/assets/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff2"),url(/Public/assets/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"),url(/Public/assetsfonts/fontawesome-webfont.ttf?v=4.0.7) format("truetype"),url(/Public/assets/fonts/fontawesome-webfont.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
@@ -11702,10 +11702,10 @@ wi-wind-default._345-deg {
     --primary-color: #191A1C;
     --secondary-color: #837788;
     --chart-color1: #191A1C;
-    --chart-color2: #837788;
+    --chart-color2: #bb4838;
     --chart-color3: #374765;
     --chart-color4: #484261;
-    --chart-color5: #717788;
+    --chart-color5: #3b68e9;
     --sidebar-img: url(../img/sidebar-bg/sidebar-1.jpg)
 }
 
@@ -11813,10 +11813,10 @@ wi-wind-default._345-deg {
     --primary-rgb: 255,69,96;
     --secondary-rgb: 0,152,159;
     --chart-color1: #ff5959;
-    --chart-color2: #845865;
+    --chart-color2: #d43463;
     --chart-color3: #CA8398;
     --chart-color4: #E1C7CE;
-    --chart-color5: #00989F;
+    --chart-color5: #629746;
     --primary-gradient: linear-gradient(145deg, var(--primary-color), var(--secondary-color))
 }
 

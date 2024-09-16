@@ -2,4 +2,4 @@
 
 use Core\View;
 
-View::component('inventory/sales');
+View::component('inventory/recipe');

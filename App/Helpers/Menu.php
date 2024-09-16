@@ -2,22 +2,28 @@
 
 namespace App\Helpers;
 
+use Core\Http\Res;
+
 class Menu
 {
     public static function myMenu()
     {
+        $URL = $_SERVER['REQUEST_URI'];
+        $CT = explode("/", $URL);
+
         return [
             translate('Dashboard') => [
-                'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
+                'icon' => '<svg xmlns="http://ww        w.w3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
                         <path class="fill-secondary" fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                         </svg>',
                 'link' => '/dashboard',
                 'id' => "dashboard",
+                'active' => $URL === "/dashboard" ? 'active' : "",
                 'other' => ''
             ],
-            translate('Inventory') => [
-                'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
+            translate('Inventory Management') => [
+                'icon' => '<svg xmlns="http://www.w 3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M0 3H16V4H0V3Z" />
                 <path d="M9 1H14V6H9V1Z" />
                 <path d="M0 13H16V14H0V13Z" />
@@ -25,13 +31,20 @@ class Menu
                 <path class="fill-secondary" d="M0 8H16V9H0V8Z" />
                 <path class="fill-secondary" d="M2 6H7V11H2V6Z" />
               </svg>',
-                'link' => '#',
+                'link' => '/inventory',
                 'other' => '',
                 'id' => "inventory",
+                'active' => $URL === "/inventory" ? 'active' : "",
                 'sub' => [
-                    "Stats" => "/inventory",
-                    "Sales" => "/inventory/sales",
-                    "Invoice" => "/inventory/invoice",
+                    "Insight" => ["url" => "/inventory", 
+                    'active' => $URL === "/inventory" ? 'active' : "",],
+                    "Recipe" => ["url" => "/inventory/recipe", 
+                    'active' => $URL === "/inventory/recipe" ? 'active' : "",],
+                    "Invoices" => ["url" => "/inventory/invoice", 
+                    'active' => $URL === "/inventory/invoice" ? 'active' : "",],
+                    "Automated Inventory Recording" => ["url" => "/inventory/record", 
+                    'active' => $URL === "/inventory/record" ? 'active' : "",],
+                    // "Automated Inventory Recording" => "/inventory/invoice",
                 ]
             ],
             translate('HR & Workforce') => [
@@ -43,10 +56,14 @@ class Menu
                 'link' => '#',
                 'other' => '',
                 'id' => "force",
+                "active" => in_array("employees", $CT) ? "active" : "",
                 'sub' => [
-                    "Overview" => "/employees/overview",
-                    "Employees" => "/employees",
-                    "Schedules" => "/employees/schedule",
+                    "Insight" => ["url" => "/employees/overview", 
+                    'active' => $URL === "/employees/overview" ? 'active' : "",],
+                    "Smart Scheduling" => ["url" => "/employees/calender", 
+                    'active' => $URL === "/employees/calender" ? 'active' : "",],
+                    // "Employees" => "/employees",
+                    // "Schedules" => "/employees/schedule",
                 ]
             ],
             translate('Forecasting') => [
@@ -57,19 +74,36 @@ class Menu
                 'link' => '#',
                 'other' => '',
                 'id' => "forcast",
+                "active" => in_array("forecast", $CT) ? "active" : "",
                 'sub' => [
-                    "Calender" => "/forcast/calender",
-                    "Sales" => "/forcast/sales",
-                    // "Trends" => "/forcast/trend",
+                    // "Calender" => ["url" => "/forecast/calender", 
+                    // 'active' => $URL === "/forecast/calender" ? 'active' : "",],
+                    "Insight" => ["url" => "/forecast/insight", 
+                    'active' => $URL === "/forecast/insight" ? 'active' : "",],
+                    "Sales" => ["url" => "/forecast/sales", 
+                    'active' => $URL === "/forecast/sales" ? 'active' : "",],
+                    "Inventory" => ["url" => "/forecast/inventory", 
+                    'active' => $URL === "/forecast/inventory" ? 'active' : "",],
                 ]
             ],
-            translate('Chat') => [
+            translate('Ai Assistant') => [
                 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M5.33801 1.59C4.38559 1.85248 3.43965 2.1379 2.50101 2.446C2.41529 2.47376 2.3391 2.52504 2.28111 2.59399C2.22312 2.66295 2.18567 2.7468 2.17301 2.836C1.61901 6.993 2.89901 10.026 4.42601 12.024C5.07252 12.8784 5.84341 13.6311 6.71301 14.257C7.05901 14.501 7.36501 14.677 7.60601 14.79C7.72601 14.847 7.82401 14.885 7.89901 14.908C7.93181 14.9195 7.96562 14.9279 8.00001 14.933C8.03398 14.9275 8.06743 14.9191 8.10001 14.908C8.17601 14.885 8.27401 14.847 8.39401 14.79C8.63401 14.677 8.94101 14.5 9.28701 14.257C10.1566 13.6311 10.9275 12.8784 11.574 12.024C13.101 10.027 14.381 6.993 13.827 2.836C13.8145 2.74676 13.777 2.66285 13.719 2.59388C13.661 2.52491 13.5848 2.47366 13.499 2.446C12.848 2.233 11.749 1.886 10.662 1.591C9.55201 1.29 8.53101 1.067 8.00001 1.067C7.47001 1.067 6.44801 1.289 5.33801 1.59ZM5.07201 0.56C6.15701 0.265 7.31001 0 8.00001 0C8.69001 0 9.84301 0.265 10.928 0.56C12.038 0.86 13.157 1.215 13.815 1.43C14.0901 1.52085 14.334 1.68747 14.5187 1.9107C14.7034 2.13394 14.8213 2.40474 14.859 2.692C15.455 7.169 14.072 10.487 12.394 12.682C11.6824 13.621 10.834 14.4479 9.87701 15.135C9.5461 15.3728 9.19549 15.5819 8.82901 15.76C8.54901 15.892 8.24801 16 8.00001 16C7.75201 16 7.45201 15.892 7.17101 15.76C6.80452 15.5819 6.45391 15.3728 6.12301 15.135C5.16603 14.4478 4.31759 13.621 3.60601 12.682C1.92801 10.487 0.545005 7.169 1.14101 2.692C1.17869 2.40474 1.29665 2.13394 1.48132 1.9107C1.666 1.68747 1.9099 1.52085 2.18501 1.43C3.1402 1.11681 4.10281 0.826725 5.07201 0.56Z" />
-                <path class="fill-secondary" d="M8 5.38462C8.21217 5.38462 8.41566 5.46566 8.56569 5.60992C8.71571 5.75418 8.8 5.94983 8.8 6.15385V6.53846H7.2V6.15385C7.2 5.94983 7.28429 5.75418 7.43431 5.60992C7.58434 5.46566 7.78783 5.38462 8 5.38462ZM9.2 6.53846V6.15385C9.2 5.84783 9.07357 5.55434 8.84853 5.33795C8.62348 5.12157 8.31826 5 8 5C7.68174 5 7.37652 5.12157 7.15147 5.33795C6.92643 5.55434 6.8 5.84783 6.8 6.15385V6.53846C6.58783 6.53846 6.38434 6.61951 6.23431 6.76376C6.08429 6.90802 6 7.10368 6 7.30769V9.23077C6 9.43478 6.08429 9.63044 6.23431 9.7747C6.38434 9.91896 6.58783 10 6.8 10H9.2C9.41217 10 9.61566 9.91896 9.76569 9.7747C9.91571 9.63044 10 9.43478 10 9.23077V7.30769C10 7.10368 9.91571 6.90802 9.76569 6.76376C9.61566 6.61951 9.41217 6.53846 9.2 6.53846Z" />
-              </svg>',
+              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
+              <path class="fill-secondary" d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
+            </svg>',
                 'link' => '/chat',
+                'active' => $URL === "/chat" ? 'active' : "",
                 'other' => ''
+            ],
+            translate('Logout') => [
+                'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M7.5 1v7h1V1h-1z"></path>
+              <path class="fill-secondary" d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"></path>
+            </svg>',
+            'id'=>'itr',
+                'link' => '/',
+                'other' => '',
+                'active' => ''
             ],
         ];
     }

@@ -13,4 +13,7 @@ class Inventory {
     public function sales(){
         View::draw('inventory/sales');
     }
+    public function record(){
+        View::draw('inventory/drag');
+    }
 }

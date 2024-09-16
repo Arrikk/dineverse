@@ -1,5 +1,5 @@
 <div class="row g-3 row-deck">
-    <div class="col-lg-3 col-md-6 col-sm-6">
+    <!-- <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card overflow-hidden">
             <div class="card-body">
                 <i class="fa fa-user fa-lg position-absolute top-0 end-0 p-3"></i>
@@ -50,7 +50,7 @@
                 <div class="progress-bar bg-secondary" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="col-lg-8 col-md-12">
         <div class="card">
             <div class="card-header">

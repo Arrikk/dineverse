@@ -12,7 +12,7 @@ use Core\View;
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Responsive Bootstrap 5 admin dashboard template & web App ui kit.">
+  <meta name="description" content="Luni Dashboard">
   <meta name="keyword" content="DineVerse">
   <link rel="icon" href="/Public/assets/logo/dv-profil-4.png" type="image/x-icon"> <!-- Favicon-->
   <title>Dashboard</title>
@@ -20,6 +20,8 @@ use Core\View;
   <link rel="stylesheet" href="/Public/assets/cssbundle/daterangepicker.min.css">
   <!-- project css file  -->
   <link rel="stylesheet" href="/Public/assets/css/luno-style.css">
+  <!-- <link rel="stylesheet" href="https://www.wrraptheme.com/templates/luno/assets/css/luno-style.css"> -->
+  <!-- <link rel="stylesheet" href="/Public/assets/cssbundle/tuicalendar.min.css"> -->
   <!-- Jquery Core Js -->
   <script src="/Public/assets/js/plugins.js"></script>
 </head>
@@ -39,22 +41,22 @@ use Core\View;
             <?php foreach(Menu::myMenu() as $name => $menu): ?>
                 <?php if(!isset($menu['sub'])): ?>
                     <li>
-                    <a class="m-link active" href="<?= $menu['link'] ?? "" ?>">
+                    <a class="m-link <?= $menu['active'] ?>" href="<?= $menu['link'] ?? "" ?>">
                         <?= $menu['icon'] ?? "" ?>
                         <span class="ms-2"><?= $name ?? "N/A" ?></span>
                     </a>
                     </li>
                 <?php else: ?>
                     <li class="collapsed">
-                      <a class="m-link" data-bs-toggle="collapse" data-bs-target="#<?= $menu['id'] ?? '' ?>" href="<?= $menu['link'] ?? "" ?>">
+                      <a class="m-link <?= $menu["active"] ?> <?= $menu['active'] === "active" ? "collapsed" : "" ?>" aria-expanded="<?= $menu['active'] === "active" ? "true" : "false" ?>" data-bs-toggle="collapse" data-bs-target="#<?= $menu['id'] ?? '' ?>" href="<?= $menu['link'] ?? "" ?>">
                         <?= $menu['icon'] ?? "" ?>
                         <span class="ms-2"><?= $name ?? "" ?></span>
                         <span class="arrow fa fa-angle-right ms-auto text-end"></span>
                       </a>
                       <!-- Menu: Sub menu ul -->
-                      <ul class="sub-menu collapse" id="<?= $menu['id'] ?? '' ?>">
+                      <ul class="sub-menu collapse <?= $menu['active'] === "active" ? "show" : "" ?>" id="<?= $menu['id'] ?? '' ?>">
                         <?php foreach($menu['sub'] as $subName => $link): ?>
-                        <li><a class="ms-link" href="<?= $link ?? ""?>"><?= $subName ?? "" ?></a></li>
+                        <li><a class="ms-link <?= $link["active"] ?>" href="<?= $link["url"] ?? ""?>"><?= $subName ?? "" ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                     </li>

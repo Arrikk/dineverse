@@ -1,11 +1,11 @@
   <!-- Jquery Page Js -->
   <!-- Jquery Page Js -->
-  <script src="https://www.wrraptheme.com/templates/luno/assets/js/theme.js"></script>
+  <script src="/Public/assets/js/theme.js"></script>
   <!-- Plugin Js -->
-  <script src="../assets/js/bundle/apexcharts.bundle.js"></script>
-  <script src="https://www.wrraptheme.com/templates/luno/assets/js/bundle/dataTables.bundle.js"></script>
+  <script src="/Public/assets/js/bundle/apexcharts.bundle.js"></script>
+  <script src="/Public/assets/js/bundle/dataTables.bundle.js"></script>
   <!-- Vendor Script -->
-  <script src="../assets/js/bundle/apexcharts.bundle.js"></script>
+  <script src="/Public/assets/js/bundle/apexcharts.bundle.js"></script>
   <script>
     $('#myDataTable_no_filter').addClass('nowrap').dataTable({
       responsive: true,

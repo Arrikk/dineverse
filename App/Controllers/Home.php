@@ -24,6 +24,10 @@ class Home extends Controller
   {
     View::draw('ai/chat');
   }
+  public function test()
+  {
+    View::draw('ai/test');
+  }
   public function ai($p)
   {
     try {
