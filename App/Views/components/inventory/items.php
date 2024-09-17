@@ -1,17 +1,17 @@
 <style>
     .no-border-table {
-  border: none !important;
-}
+        border: none !important;
+    }
 
-.no-border-table th,
-.no-border-table tr,
-.no-border-table td {
-  border: none !important;
-}
+    .no-border-table th,
+    .no-border-table tr,
+    .no-border-table td {
+        border: none !important;
+    }
 </style>
 <div class="col-md-6">
     <div class="card">
-    <div class="card-header">
+        <div class="card-header">
             <h6 class="card-title mb-0">Inventory Items, Stock</h6>
             <!-- <a href="#" title="">View All</a> -->
         </div>
@@ -42,7 +42,10 @@
                                     <td><span class="badge bg-success">In Stock</span></td>
                                     <td>40 Liters</td>
                                     <td>
-                                        <div class="item-chart-selector"></div>
+                                        <div class="imrs">
+                                            <img src="/Public/chart.png" height="100" alt="">
+                                        </div>
+                                        <!-- <div class="item-chart-selector"></div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -50,7 +53,10 @@
                                     <td><span class="badge bg-danger">Low Stock</span></td>
                                     <td>5 Liters</td>
                                     <td>
-                                        <div class="item-chart-selector"></div>
+                                        <div class="imrs">
+                                            <img src="/Public/chart.png" height="100" alt="">
+                                        </div>
+                                        <!-- <div class="item-chart-selector"></div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -58,7 +64,10 @@
                                     <td><span class="badge bg-success">In Stock</span></td>
                                     <td>65 Liters</td>
                                     <td>
-                                        <div class="item-chart-selector"></div>
+                                        <div class="imrs">
+                                            <img src="/Public/chart.png" height="100" alt="">
+                                        </div>
+                                        <!-- <div class="item-chart-selector"></div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -66,7 +75,10 @@
                                     <td><span class="badge bg-success">In Stock</span></td>
                                     <td>76 Liters</td>
                                     <td>
-                                        <div class="item-chart-selector"></div>
+                                    <div class="imrs">
+                                            <img src="/Public/chart.png" height="100" alt="">
+                                        </div>
+                                        <!-- <div class="item-chart-selector"></div> -->
                                     </td>
                                 </tr>
                                 <tr>
@@ -74,7 +86,10 @@
                                     <td><span class="badge bg-warning">Low Stock</span></td>
                                     <td>15 Liters</td>
                                     <td>
-                                        <div class="item-chart-selector"></div>
+                                    <div class="imrs">
+                                            <img src="/Public/chart.png" height="100" alt="">
+                                        </div>
+                                        <!-- <div class="item-chart-selector"></div> -->
                                     </td>
                                 </tr>
                             </tbody>
