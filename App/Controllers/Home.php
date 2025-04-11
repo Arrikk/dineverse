@@ -31,7 +31,7 @@ class Home extends Controller
   public function ai($p)
   {
     try {
-      $client = new Client('AIzaSyAmuaUxJwMad_sHpXEscxEEeW7H1f5mpXg');
+      $client = new Client('');
       $response = $client->geminiPro()->generateContent(
         new TextPart($p->prompt),
       );
